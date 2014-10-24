@@ -1,8 +1,8 @@
 (defn moan [anchor contender]
-  (loop [a anchor c contender]
-    (if (<= a c)
-      c
-      (recur a (+ c c))
+  (loop [x anchor n contender]
+    (if (<= x n)
+      n
+      (recur x (+ n contender))
     )
   )
 )
